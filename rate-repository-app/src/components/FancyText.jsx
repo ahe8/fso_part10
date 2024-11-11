@@ -1,15 +1,17 @@
 import { StyleSheet, Text } from "react-native";
+import theme from './theme';
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 14,
+    fontSize: theme.fontSizes.body,
+    fontFamily: theme.fonts.main
   },
   bigText: {
-    fontSize: 24,
-    fontWeight: "700",
+    fontSize: theme.fontSizes.heading,
+    fontWeight: theme.fontWeights.bold,
   },
   boldText: {
-    fontWeight: "bold",
+    fontWeight: theme.fontWeights.bold,
   },
   greyText: {
     color: "grey",
